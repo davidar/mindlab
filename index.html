@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>JST Virtual Science Center | Mind Lab</title>
+<script language="javascript"> AC_FL_RunContent = 0; </script>
+<script language="javascript"> DetectFlashVer = 0; </script>
+<script language="JavaScript" src="common/AC_RunActiveContent.js"></script>
+<script language="JavaScript" src="common/js/common.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+var requiredMajorVersion = 9;
+var requiredMinorVersion = 0;
+var requiredRevision = 0;
+// -->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!--
+	if (screen.availWidth>=1220&&screen.availHeight>800){
+		document.write('<link rel="stylesheet" type="text/css" href="common/largescreen.css">');
+	} else {		 
+		document.write('<link rel="stylesheet" type="text/css" href="common/smallscreen.css">');
+	}
+// -->
+</script>
+<link rel="stylesheet" type="text/css" href="common/txt.css">
+</head>
+
+<body class="home">
+<div id="start">
+<script language="JavaScript" type="text/javascript">
+<!--
+if (screen.availWidth>=1220&&screen.availHeight>800){
+	w=1220;
+	h=720;
+} else {
+	w='100%';
+	h='100%';
+}
+
+if (AC_FL_RunContent == 0 || DetectFlashVer == 0) {
+	alert("AC_RunActiveContent.js");
+} else {
+	var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	if(hasRightVersion) {
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+			'width', w,
+			'height', h,
+			'src', 'base',
+			'quality', 'high',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'align', 'middle',
+			'play', 'true',
+			'loop', 'false',
+			'scale', 'noscale',
+			'wmode', 'window',
+			'devicefont', 'false',
+			'id', 'base',
+			'bgcolor', '#272727',
+			'name', 'base',
+			'menu', 'false',
+			'allowScriptAccess','sameDomain',
+			'allowFullScreen','false',
+			'movie', 'base',
+			'salign', ''
+			); //end AC code
+	} else {
+		var substitute = 'plugin.html';
+		location.replace(substitute);
+	}
+}
+// -->
+</script>
+<noscript>
+Please ensure JavaScript is enabled on your browser and you have Flash Player Plugin version 9 or higher.
+</noscript>
+</div>
+
+
+
+</body>
+
+</html>
